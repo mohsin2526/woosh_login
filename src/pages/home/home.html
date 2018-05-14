@@ -5,13 +5,39 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
-  <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
-  </p>
-  <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
-  </p>
+  <div *ngIf="isfbLoggedIn; else facebookLogin">
+    <h2>Hi, {{users.name}} ({{users.email}})</h2>
+    <p>
+      Gender: {{users.gender}}
+    </p>
+    <p>
+      <img src="{{users.picture.data.url}}" width="100" alt="{{users.name}}" />
+    </p>
+    <p>
+      <button ion-button icon-right (click)="fb_logout()">
+        Logout
+      </button>
+    </p>
+  </div>
+  <div *ngIf="isLoggedIn; else loginTemplate">
+    <h1>Welcome, {{displayName}}!</h1>
+    <p>Email: {{email}}<br>
+      Family Name: {{familyName}}<br>
+      Given Name: {{givenName}}<br>
+      User ID: {{userId}}</p>
+    <p><ion-avatar item-left>
+        <img src="{{imageUrl}}">
+       </ion-avatar></p>
+    <p><button ion-button (click)="logout()">Logout From Google</button></p>
+  </div>
+  <ng-template #facebookLogin>
+    <button ion-button icon-right (click)="fb_login()">
+      Login with
+      <ion-icon name="logo-facebook"></ion-icon>
+    </button>
+  </ng-template>
+  <ng-template #loginTemplate>
+    <h1>Please Login to see your Google Account Information</h1>
+    <p><button ion-button (click)="login()">Login With Google</button></p>
+  </ng-template>
 </ion-content>
