@@ -29,9 +29,11 @@
     "@ionic/storage": "2.1.3",
     "cordova-android": "7.0.0",
     "cordova-android-support-gradle-release": "^1.4.2",
+    "cordova-ios": "4.5.4",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-facebook4": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
     "cordova-plugin-googleplus": "^5.3.0",
+    "cordova-plugin-ionic": "^4.1.7",
     "cordova-plugin-ionic-keyboard": "^2.0.5",
     "cordova-plugin-ionic-webview": "^1.1.19",
     "cordova-plugin-splashscreen": "^5.0.2",
@@ -63,10 +65,19 @@
       },
       "cordova-plugin-googleplus": {
         "REVERSED_CLIENT_ID": "159149870509-vb7c2gjnc839hsdk67ideb9f1n0nrdkn"
+      },
+      "cordova-plugin-ionic": {
+        "APP_ID": "bbc9bdab",
+        "CHANNEL_NAME": "Master",
+        "UPDATE_METHOD": "auto",
+        "WARN_DEBUG": "true",
+        "UPDATE_API": "https://api.ionicjs.com",
+        "MAX_STORE": "2"
       }
     },
     "platforms": [
-      "android"
+      "android",
+      "ios"
     ]
   }
 }

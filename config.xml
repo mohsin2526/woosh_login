@@ -88,8 +88,17 @@
         <variable name="APP_ID" value="412639325865934" />
         <variable name="APP_NAME" value="ionic" />
     </plugin>
-    <engine name="android" spec="~7.0.0" />
     <plugin name="cordova-plugin-googleplus" spec="^5.3.0">
         <variable name="REVERSED_CLIENT_ID" value="159149870509-vb7c2gjnc839hsdk67ideb9f1n0nrdkn" />
     </plugin>
+    <plugin name="cordova-plugin-ionic" spec="^4.1.7">
+        <variable name="APP_ID" value="bbc9bdab" />
+        <variable name="CHANNEL_NAME" value="Master" />
+        <variable name="UPDATE_METHOD" value="auto" />
+        <variable name="WARN_DEBUG" value="true" />
+        <variable name="UPDATE_API" value="https://api.ionicjs.com" />
+        <variable name="MAX_STORE" value="2" />
+    </plugin>
+    <engine name="android" spec="~7.0.0" />
+    <engine name="ios" spec="~4.5.4" />
 </widget>
