@@ -27,11 +27,10 @@
     "@ionic-native/splash-screen": "4.7.0",
     "@ionic-native/status-bar": "4.7.0",
     "@ionic/storage": "2.1.3",
+    "clean": "4.0.2",
     "cordova-android": "7.0.0",
     "cordova-android-support-gradle-release": "^1.4.2",
-    "cordova-ios": "4.5.4",
     "cordova-plugin-device": "^2.0.2",
-    "cordova-plugin-facebook": "^0.2.2",
     "cordova-plugin-facebook4": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
     "cordova-plugin-googleplus": "^5.3.0",
     "cordova-plugin-ionic": "^4.1.7",
@@ -74,15 +73,10 @@
         "WARN_DEBUG": "true",
         "UPDATE_API": "https://api.ionicjs.com",
         "MAX_STORE": "2"
-      },
-      "cordova-plugin-facebook": {
-        "FACEBOOK_DISPLAY_NAME": "ionic",
-        "FACEBOOK_APP_ID": "412639325865934"
       }
     },
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   }
 }
