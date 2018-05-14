@@ -31,6 +31,7 @@
     "cordova-android-support-gradle-release": "^1.4.2",
     "cordova-ios": "4.5.4",
     "cordova-plugin-device": "^2.0.2",
+    "cordova-plugin-facebook": "^0.2.2",
     "cordova-plugin-facebook4": "git+https://github.com/amritk/cordova-plugin-facebook4.git",
     "cordova-plugin-googleplus": "^5.3.0",
     "cordova-plugin-ionic": "^4.1.7",
@@ -64,7 +65,7 @@
         "ANDROID_SUPPORT_VERSION": "27.+"
       },
       "cordova-plugin-googleplus": {
-        "REVERSED_CLIENT_ID": "159149870509-vb7c2gjnc839hsdk67ideb9f1n0nrdkn"
+        "REVERSED_CLIENT_ID": "159149870509-7rcvndsm6akqmkek3rvsiprseql2qn8t"
       },
       "cordova-plugin-ionic": {
         "APP_ID": "bbc9bdab",
@@ -73,6 +74,10 @@
         "WARN_DEBUG": "true",
         "UPDATE_API": "https://api.ionicjs.com",
         "MAX_STORE": "2"
+      },
+      "cordova-plugin-facebook": {
+        "FACEBOOK_DISPLAY_NAME": "ionic",
+        "FACEBOOK_APP_ID": "412639325865934"
       }
     },
     "platforms": [
